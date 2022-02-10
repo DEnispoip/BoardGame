@@ -18,6 +18,8 @@ set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
         myqlabel.cpp
+        boardFrame.cpp
+        boardFrame.h
         mainwindow.h
         myqlabel.h
         mainwindow.ui

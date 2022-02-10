@@ -3,7 +3,10 @@
 
 #include <QMainWindow>
 #include <time.h>
+#include <QGridLayout>
+#include <vector>
 #include "myqlabel.h"
+#include "boardFrame.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,6 +22,8 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    MyQLabel* ql;
+    QGridLayout* grid_l;
+
+    std::vector<MyQLabel*> labelArr;
 };
 #endif // MAINWINDOW_H

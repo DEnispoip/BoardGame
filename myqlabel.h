@@ -19,11 +19,14 @@ public:
     virtual ~MyQLabel();
     void setThing(Thing tmp);
 
+    QSize getSize(){return *size;}
+
 private:
     Thing thing;
     QPixmap qp;
 
 protected:
+    QSize* size;
      void mousePressEvent(QMouseEvent *ev);
 };
 
